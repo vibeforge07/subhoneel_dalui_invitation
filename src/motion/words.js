@@ -161,7 +161,6 @@ export function initWords() {
                  <h3 class="ev__bn">${esc(e.bn)}</h3><p class="ev__en">${esc(e.en)}</p>
                  <p class="ev__when">${esc(e.when)}</p><p class="ev__where">${esc(e.where)}</p>
                  <p class="ev__note">${esc(e.note)}</p>
-                 <a class="btn btn--line" href="${mapsLink(e.mapQuery)}" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>Directions</a>
                </div>
              </div>
            </div>`
