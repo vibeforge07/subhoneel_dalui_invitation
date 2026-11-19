@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <!-- Royal Velvet Maroon Background -->
+    <radialGradient id="favBg" cx="42%" cy="38%" r="68%">
+      <stop offset="0%" stop-color="#99152b"/>
+      <stop offset="55%" stop-color="#5a0a17"/>
+      <stop offset="100%" stop-color="#240207"/>
+    </radialGradient>
+    
+    <!-- Shimmering Antique Gold -->
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff1cc"/>
+      <stop offset="25%" stop-color="#eac67a"/>
+      <stop offset="50%" stop-color="#a67c33"/>
+      <stop offset="75%" stop-color="#fcedb8"/>
+      <stop offset="100%" stop-color="#73501a"/>
+    </linearGradient>
+
+    <!-- Bevel Lighting for Inner Ring -->
+    <linearGradient id="favRing" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7d571f"/>
+      <stop offset="50%" stop-color="#ffeaae"/>
+      <stop offset="100%" stop-color="#a87e35"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Outer Medallion -->
+  <circle cx="64" cy="64" r="61" fill="url(#favBg)" stroke="url(#favGold)" stroke-width="3.5" filter="url(#glow)"/>
+
+  <!-- Inner Delicate Gold Ring -->
+  <circle cx="64" cy="64" r="54" fill="none" stroke="url(#favRing)" stroke-width="1.2" stroke-dasharray="3.5 2.5" opacity="0.85"/>
+
+  <!-- Iconic Bengali Wedding Prajapati (Butterfly) in Gold -->
+  <g transform="translate(64 64) scale(0.72) translate(-60 -42)" filter="url(#glow)">
+    <g fill="none" stroke="url(#favGold)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Right Wing Top & Bottom -->
+      <path d="M63 30C70 16 92 6 108 10c8 2 6 14-2 22c-9 9-27 12-43 10z" fill="url(#favGold)" fill-opacity="0.22"/>
+      <path d="M63 44c14-2 32 4 36 16c3 10-6 18-15 14c-9-4-17-16-21-26z" fill="url(#favGold)" fill-opacity="0.22"/>
+      <path d="M66 32c8-9 22-15 34-15M68 37c10-4 22-6 31-10M67 49c9 1 19 6 24 13" stroke-width="1.6"/>
+      
+      <!-- Left Wing Top & Bottom (Mirrored) -->
+      <g transform="matrix(-1 0 0 1 120 0)">
+        <path d="M63 30C70 16 92 6 108 10c8 2 6 14-2 22c-9 9-27 12-43 10z" fill="url(#favGold)" fill-opacity="0.22"/>
+        <path d="M63 44c14-2 32 4 36 16c3 10-6 18-15 14c-9-4-17-16-21-26z" fill="url(#favGold)" fill-opacity="0.22"/>
+        <path d="M66 32c8-9 22-15 34-15M68 37c10-4 22-6 31-10M67 49c9 1 19 6 24 13" stroke-width="1.6"/>
+      </g>
+
+      <!-- Antennae -->
+      <path d="M58.5 19C55 12 50 8 45 7c-2.2-.4-3 2-1 2.6M61.5 19C65 12 70 8 75 7c2.2-.4 3 2 1 2.6" stroke-width="1.8"/>
+    </g>
+
+    <!-- Center Body & Dots -->
+    <path d="M60 24c2.2 0 3 3 3 6v28c0 4-1.4 9-3 9s-3-5-3-9V30c0-3 .8-6 3-6z" fill="url(#favGold)"/>
+    <circle cx="60" cy="20.5" r="3.2" fill="url(#favGold)"/>
+    <circle cx="92" cy="20" r="3" fill="url(#favGold)"/>
+    <circle cx="28" cy="20" r="3" fill="url(#favGold)"/>
+    <circle cx="86" cy="63" r="2.5" fill="url(#favGold)"/>
+    <circle cx="34" cy="63" r="2.5" fill="url(#favGold)"/>
+
+    <!-- Auspicious Vermilion/Kumkum Center Bindi -->
+    <circle cx="60" cy="38" r="2.8" fill="#e61e38" stroke="#ffe399" stroke-width="0.8"/>
+  </g>
+</svg>
+
