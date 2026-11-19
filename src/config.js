@@ -96,11 +96,11 @@ const INVITE = {
 
   // shape: "land" = 4:3 frame, "wide" = 3:2 frame, "port" = 3:4 portrait (match the photo)
   gallery: [
-    { img: "kolkata-1", shape: "land", place: "হাঁটতে হাঁটতে", caption: "কে আগে হাঁটবে তাই নিয়ে ঝগড়া, হাত ছাড়েনি কেউ" },
-    { img: "kolkata-2", shape: "port", place: "সিঁড়ির আড্ডা", caption: "ফটোগ্রাফার তিনবার ডাকল, গল্প তবু শেষ হয়নি" },
-    { img: "kolkata-3", shape: "port", place: "হাসির কারণ", caption: "কী বলেছিল মনে নেই, শুধু মনে আছে খুব হেসেছিলাম" },
-    { img: "kolkata-4", shape: "port", place: "লাল দরজার নিচে", caption: "চারপাশে ভিড়, হর্ন, আমরা কিছুই শুনিনি" },
-    { img: "kolkata-5", shape: "port", place: "আর ক'টা দিন", caption: "তারপর আর আলাদা বাড়ি ফেরার তাড়া নেই" },
+    { img: "kolkata-1", shape: "land", place: "পুরোনো শহরে", caption: "কলকাতার পুরোনো থামের ফাঁকে, হাতে হাত রেখে নতুন পথচলা" },
+    { img: "kolkata-2", shape: "port", place: "সিঁড়ির আড্ডা", caption: "এক কাপ চা, এক টুকরো বিকেল আর না ফুরোনো গল্প" },
+    { img: "kolkata-3", shape: "port", place: "প্রাণখোলা হাসি", caption: "ছোট্ট খুনসুটি, একটু অভিমান আর অনেকটা হাসি" },
+    { img: "kolkata-4", shape: "port", place: "চোখে চোখে", caption: "মুখে না বলা কথাগুলো চোখই বলে দেয়" },
+    { img: "kolkata-5", shape: "port", place: "অপেক্ষার শেষ", caption: "আর মাত্র ক'টা দিন, তারপর একসাথে সারাজীবন" },
   ],
 
   eventsRange: "09 – 13 December 2026",
