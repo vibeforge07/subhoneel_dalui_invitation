@@ -10,20 +10,21 @@ export default function Couple() {
         <p className="head__kicker"><b>I</b>The couple</p>
         <h2 className="head__title" data-words>বর ও কনে</h2>
         <svg className="lotusline"><use href="#lotusline" /></svg>
+        <p className="head__sub" data-k="bondingNote"></p>
       </header>
       <div className="couple__grid">
-        <article className="person person--bride">
+        <article className="person person--groom">
           <div className="arch arch--photo" data-arch>
             <div className="arch__inner">
-              <img className="arch__photo" data-asset="bride" alt="Ahana" style={{ objectPosition: "47% 30%" }} />
+              <img className="arch__photo" data-asset="groom" alt="Subhoneel" style={{ objectPosition: "44% 28%" }} />
               <div className="arch__empty"><span className="initial" data-k="couple.initials.0"></span></div>
             </div>
           </div>
           <div className="person__text">
-            <p className="person__role">The bride</p>
-            <h3 className="person__name foil" data-k="couple.bride.full"></h3>
-            <p className="person__parents" data-k="couple.bride.parentsBn"></p>
-            <p className="person__about" data-k="couple.bride.about"></p>
+            <p className="person__role">The groom</p>
+            <h3 className="person__name foil" data-k="couple.groom.full"></h3>
+            <p className="person__parents" data-k="couple.groom.parentsBn"></p>
+            <p className="person__about" data-k="couple.groom.about"></p>
           </div>
         </article>
 
@@ -32,18 +33,18 @@ export default function Couple() {
           <span className="foil">&amp;</span>
         </div>
 
-        <article className="person person--groom">
+        <article className="person person--bride">
           <div className="arch arch--photo" data-arch>
             <div className="arch__inner">
-              <img className="arch__photo" data-asset="groom" alt="Ritwik" style={{ objectPosition: "44% 28%" }} />
+              <img className="arch__photo" data-asset="bride" alt="Madhumita" style={{ objectPosition: "47% 30%" }} />
               <div className="arch__empty"><span className="initial" data-k="couple.initials.1"></span></div>
             </div>
           </div>
           <div className="person__text">
-            <p className="person__role">The groom</p>
-            <h3 className="person__name foil" data-k="couple.groom.full"></h3>
-            <p className="person__parents" data-k="couple.groom.parentsBn"></p>
-            <p className="person__about" data-k="couple.groom.about"></p>
+            <p className="person__role">The bride</p>
+            <h3 className="person__name foil" data-k="couple.bride.full"></h3>
+            <p className="person__parents" data-k="couple.bride.parentsBn"></p>
+            <p className="person__about" data-k="couple.bride.about"></p>
           </div>
         </article>
       </div>

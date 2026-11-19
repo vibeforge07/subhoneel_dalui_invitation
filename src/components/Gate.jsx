@@ -25,12 +25,12 @@ export default function Gate() {
       </div>
       <div className="gate__ui" id="gateUi">
         <svg className="gate__fly"><use href="#butterfly" /></svg>
-        <p className="gate__invocation">প্রজাপতয়ে নমঃ</p>
+        <p className="gate__invocation">শ্রী শ্রী প্রজাপতয়ে নমঃ</p>
         <h1 className="gate__title foil">শুভ বিবাহ</h1>
         <p className="gate__names">
-          <span data-k="couple.bride.first"></span>
-          <i>&amp;</i>
           <span data-k="couple.groom.first"></span>
+          <i>&amp;</i>
+          <span data-k="couple.bride.first"></span>
         </p>
         <p className="gate__date" data-k="wedding.short"></p>
         <button className="gate__btn" id="openBtn" type="button">

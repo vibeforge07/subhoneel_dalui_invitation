@@ -14,7 +14,7 @@ export function initWords() {
     const v = get(n.dataset.k);
     if (v != null) n.textContent = v;
   });
-  document.title = `${C.couple.bride.first} & ${C.couple.groom.first} · শুভ বিবাহ`;
+  document.title = `${C.couple.groom.first} & ${C.couple.bride.first} · শুভ বিবাহ`;
 
   const el = (tag, cls, html) => {
     const n = document.createElement(tag);
@@ -54,7 +54,7 @@ export function initWords() {
       `<p class="cp__inv">শ্রী শ্রী প্রজাপতয়ে নমঃ</p>` +
       `<p class="cp__big foil">শুভ বিবাহ</p>` +
       `<svg class="cp__flourish"><use href="#flourish"/></svg>` +
-      `<p class="cp__names">${esc(K.bride)}<i>ও</i>${esc(K.groom)}</p>` +
+      `<p class="cp__names">${esc(K.groom)}<i>ও</i>${esc(K.bride)}</p>` +
       `<p class="cp__date">${esc(W0.short)}</p>`,
     mantra:
       `<svg class="cp__lotus"><use href="#lotusline"/></svg>` +
@@ -65,8 +65,8 @@ export function initWords() {
       `<svg class="cp__fly cp__fly--sm"><use href="#butterfly"/></svg>`,
     photo:
       `<p class="cp__kicker">শুভ পরিণয়</p>` +
-      `<figure class="cp__photo"><img data-asset="couple" alt="${esc(K.bride)} ও ${esc(K.groom)}" loading="lazy" decoding="async"></figure>` +
-      `<p class="cp__pair">${esc(K.bride)}<i>&amp;</i>${esc(K.groom)}</p>` +
+      `<figure class="cp__photo"><img data-asset="couple" alt="${esc(K.groom)} ও ${esc(K.bride)}" loading="lazy" decoding="async"></figure>` +
+      `<p class="cp__pair">${esc(K.groom)}<i>&amp;</i>${esc(K.bride)}</p>` +
       `<svg class="cp__flourish"><use href="#flourish"/></svg>`,
     bride: family(K.brideSide),
     groom: family(K.groomSide),
@@ -79,7 +79,7 @@ export function initWords() {
       `<p class="cp__lagna">${esc(W0.bnLagna)}</p>` +
       `<svg class="cp__lotus cp__lotus--sm"><use href="#lotusline"/></svg>` +
       `<p class="cp__venue">${esc(C.venue.name)}<span>${esc(C.venue.address)}</span></p>` +
-      `<p class="cp__come">আসবেন কিন্তু</p>`,
+      `<p class="cp__come">${esc(C.closing.line)}</p>`,
     families:
       `<svg class="cp__fly"><use href="#butterfly"/></svg>` +
       `<p class="cp__kicker">শুভেচ্ছান্তে</p>` +
@@ -192,6 +192,38 @@ export function initWords() {
     );
   }
 
+  const venueDuo = $("#venueDuo");
+  if (venueDuo && C.venues) {
+    C.venues.forEach((v) => {
+      venueDuo.appendChild(
+        el(
+          "article",
+          "venue__card",
+          `<div class="venue__card-kicker">
+             <span class="venue__kicker-bn">${esc(v.kicker)}</span>
+             <span class="venue__kicker-en">${esc(v.enKicker)}</span>
+           </div>
+           <h3 class="venue__name">${esc(v.name)}</h3>
+           <p class="venue__addr">${esc(v.address)}</p>
+           <p class="venue__when">${esc(v.when)}</p>
+           ${v.lagna ? `<p class="venue__lagna">${esc(v.lagna)}</p>` : ""}
+           <p class="venue__note">${esc(v.note)}</p>
+           <div class="venue__map">
+             <iframe
+               title="${esc(v.name)} map"
+               loading="lazy"
+               referrerPolicy="no-referrer-when-downgrade"
+               src="https://maps.google.com/maps?q=${enc(v.mapQuery)}&z=14&output=embed"
+             ></iframe>
+           </div>
+           <a class="btn btn--crimson" href="${mapsLink(v.mapUrl || v.mapQuery)}" target="_blank" rel="noopener">
+             <svg><use href="#i-pin"/></svg>Open in Google Maps
+           </a>`
+        )
+      );
+    });
+  }
+
   const mapFrame = $("#mapFrame");
   if (mapFrame) mapFrame.src = `https://maps.google.com/maps?q=${enc(C.venue.mapQuery)}&z=14&output=embed`;
   const mapBtn = $("#mapBtn");
@@ -202,7 +234,7 @@ export function initWords() {
       const f = (iso) => new Date(iso).toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
       const W = C.wedding;
       return (
-        `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${enc(`${C.couple.bride.first} & ${C.couple.groom.first}'s wedding`)}` +
+        `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${enc(`${C.couple.groom.first} & ${C.couple.bride.first}'s wedding`)}` +
         `&dates=${f(W.startISO)}/${f(W.endISO)}&details=${enc(`Lagna ${W.lagna}`)}&location=${enc(`${C.venue.name}, ${C.venue.address}`)}`
       );
     })();
