@@ -96,11 +96,11 @@ const INVITE = {
 
   // shape: "land" = 4:3 frame, "wide" = 3:2 frame, "port" = 3:4 portrait (match the photo)
   gallery: [
-    { img: "kolkata-1", shape: "land", place: "পাশাপাশি", caption: "হাতটা ধরা থাকলে রাস্তা আর লম্বা লাগে না" },
-    { img: "kolkata-2", shape: "port", place: "গল্প চলুক", caption: "সিঁড়িতে বসে কথা, কিছুতেই ফুরোয় না" },
-    { img: "kolkata-3", shape: "port", place: "এই হাসিটুকু", caption: "যে হাসিটা শুধু একজনের জন্যই আসে" },
-    { img: "kolkata-4", shape: "port", place: "চোখে চোখে", caption: "না বলেও অনেক কথা বলা হয়ে যায়" },
-    { img: "kolkata-5", shape: "port", place: "এভাবেই, সারাজীবন", caption: "কাছে থেকো, ঠিক এতটাই কাছে" },
+    { img: "kolkata-1", shape: "land", place: "হাঁটতে হাঁটতে", caption: "কে আগে হাঁটবে তাই নিয়ে ঝগড়া, হাত ছাড়েনি কেউ" },
+    { img: "kolkata-2", shape: "port", place: "সিঁড়ির আড্ডা", caption: "ফটোগ্রাফার তিনবার ডাকল, গল্প তবু শেষ হয়নি" },
+    { img: "kolkata-3", shape: "port", place: "হাসির কারণ", caption: "কী বলেছিল মনে নেই, শুধু মনে আছে খুব হেসেছিলাম" },
+    { img: "kolkata-4", shape: "port", place: "লাল দরজার নিচে", caption: "চারপাশে ভিড়, হর্ন, আমরা কিছুই শুনিনি" },
+    { img: "kolkata-5", shape: "port", place: "আর ক'টা দিন", caption: "তারপর আর আলাদা বাড়ি ফেরার তাড়া নেই" },
   ],
 
   eventsRange: "09 – 13 December 2026",
