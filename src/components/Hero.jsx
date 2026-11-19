@@ -42,12 +42,12 @@ export default function Hero() {
           <div className="hero__row">
             <div className="hero__name hero__name--l">
               <h2 className="name foil-live" data-split data-k="couple.groom.first"></h2>
-              <p className="hero__parent hx"><span className="hero__rel">Son of</span> <span data-k="couple.groom.parents"></span></p>
+              <p className="hero__parent hx"><span className="hero__rel">Son of</span><span data-k="couple.groom.parents"></span></p>
             </div>
 
             <figure className="frame frame--hero" id="heroFrame" data-depth="0.03">
               <div className="frame__photo">
-                <img data-asset="couple" alt="Subhoneel and Madhumita" />
+                <img data-asset="couple-hero" alt="Subhoneel and Madhumita" />
                 <div className="frame__empty"><span className="mono" data-mono></span></div>
               </div>
               <img className="frame__art" data-asset="frame-gold" alt="" />
@@ -56,11 +56,11 @@ export default function Hero() {
             <div className="hero__name hero__name--r">
               <span className="hero__amp foil">&amp;</span>
               <h2 className="name foil-live" data-split data-k="couple.bride.first"></h2>
-              <p className="hero__parent hx"><span className="hero__rel">Daughter of</span> <span data-k="couple.bride.parents"></span></p>
+              <p className="hero__parent hx"><span className="hero__rel">Daughter of</span><span data-k="couple.bride.parents"></span></p>
             </div>
           </div>
         </div>
-        <a className="scroll-cue hx" href="#couple" aria-label="Scroll down"><span>Scroll</span><i></i></a>
+        <a className="scroll-cue hx" href="#couple" aria-label="Keep scrolling"><span>Keep scrolling</span><i></i></a>
       </section>
 
       <div className="seam" aria-hidden="true"><img data-asset="garland" alt="" /></div>

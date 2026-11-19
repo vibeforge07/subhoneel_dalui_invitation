@@ -240,13 +240,20 @@ export function initWords() {
     })();
   }
 
-  // big names: one span per letter, gold that follows the light
+  // Bangla must never be cut into letters: a vowel sign (ি ী ু) or a conjunct (ন্ত) split into its own
+  // span loses its shaping and shows as a dotted circle with gaps. Bangla text gets .is-bn and is kept
+  // whole per word; Latin names still get one span per letter.
+  const BN = /[ঀ-৿]/;
+  $$(".gate__names span, .cp__names span, [data-split]").forEach((n) => BN.test(n.textContent) && n.classList.add("is-bn"));
+
+  // big names: one span per letter (one per word for Bangla), gold that follows the light
   const names = $$(".name[data-split]");
   names.forEach((n) => {
     const text = n.textContent;
     n.setAttribute("aria-label", text);
     n.textContent = "";
-    [...text].forEach((ch) => n.appendChild(el("span", "ch", ch === " " ? "&nbsp;" : esc(ch))));
+    const parts = BN.test(text) ? text.split(/(\s+)/).filter(Boolean) : [...text];
+    parts.forEach((ch) => n.appendChild(el("span", "ch", /^\s+$/.test(ch) ? "&nbsp;" : esc(ch))));
   });
   state.names = names;
 
@@ -277,6 +284,11 @@ export function initWords() {
       .map((w) => `<span class="w"><span class="w__i">${esc(w)}</span></span>`)
       .join(" ");
   });
+
+  // every element that shows Bangla gets .is-bn: Bangla font, no tracking, no caps, no fake italic
+  // (Cinzel / Cormorant have no Bangla glyphs, and their letter-spacing tears conjuncts apart)
+  const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  for (let t; (t = walk.nextNode()); ) if (BN.test(t.data) && t.parentElement) t.parentElement.classList.add("is-bn");
 
   // arches, bells, card corners
   Ornaments.mount();
