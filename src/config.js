@@ -96,11 +96,11 @@ const INVITE = {
 
   // shape: "land" = 4:3 frame, "wide" = 3:2 frame, "port" = 3:4 portrait (match the photo)
   gallery: [
-    { img: "kolkata-1", shape: "wide", place: "ভিক্টোরিয়ার আলোয়", caption: "শহরের আলো আর ভিক্টোরিয়ার সাক্ষী রেখে এক অচেনা টান" },
-    { img: "kolkata-2", shape: "port", place: "হাত ধরে পথচলা", caption: "বিশ্বাস আর ভালোবাসায় হাত ধরে আজীবন চলার মধুর অঙ্গীকার" },
-    { img: "kolkata-3", shape: "wide", place: "মিষ্টি খুনসুটি", caption: "একরাশ হাসি আর হাজারো না বলা মধুর কথা" },
-    { img: "kolkata-4", shape: "wide", place: "চোখের ভাষায়", caption: "নীরব রাতের শহরে শুধু চোখের ভাষায় ভালোবাসা প্রকাশ" },
-    { img: "kolkata-5", shape: "wide", place: "এক চিরন্তন সূচনা", caption: "দুটো মন মিলেমিশে এক হওয়ার চিরন্তন মুহূর্ত" },
+    { img: "kolkata-1", shape: "land", place: "পুরোনো শহরে", caption: "কলকাতার পুরোনো থামের ফাঁকে, হাতে হাত রেখে নতুন পথচলা" },
+    { img: "kolkata-2", shape: "port", place: "সিঁড়ির আড্ডা", caption: "এক কাপ চা, এক টুকরো বিকেল আর না ফুরোনো গল্প" },
+    { img: "kolkata-3", shape: "port", place: "প্রাণখোলা হাসি", caption: "ছোট্ট খুনসুটি, একটু অভিমান আর অনেকটা হাসি" },
+    { img: "kolkata-4", shape: "port", place: "চোখে চোখে", caption: "মুখে না বলা কথাগুলো চোখই বলে দেয়" },
+    { img: "kolkata-5", shape: "port", place: "অপেক্ষার শেষ", caption: "আর মাত্র ক'টা দিন, তারপর একসাথে সারাজীবন" },
   ],
 
   eventsRange: "09 – 13 December 2026",
