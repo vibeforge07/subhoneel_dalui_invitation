@@ -96,11 +96,11 @@ const INVITE = {
 
   // shape: "land" = 4:3 frame, "wide" = 3:2 frame, "port" = 3:4 portrait (match the photo)
   gallery: [
-    { img: "kolkata-1", shape: "land", place: "ভিক্টোরিয়ার সামনে", caption: "এত আলো ভিক্টোরিয়ায়, তবু দু'জনেরই চোখ বোজা" },
-    { img: "kolkata-2", shape: "port", place: "সিঁড়িতে বসে", caption: "ওর দিকে তাকালেই আর হাসি থামে না" },
-    { img: "kolkata-3", shape: "wide", place: "ল্যাম্পপোস্টের আলোয়", caption: "মাথা রাখার জায়গাটা আগেই চেনা, এবার সারাজীবনের" },
-    { img: "kolkata-4", shape: "port", place: "লাল খিলানের নিচে", caption: "শুভদৃষ্টি তো ১১ই ডিসেম্বর, মহড়াটা আগেই হয়ে গেল" },
-    { img: "kolkata-5", shape: "wide", place: "ফাঁকা রাস্তায়", caption: "চুলে লাল গোলাপ, মুখে হাসি, সামনের পুরো পথটা দু'জনের" },
+    { img: "kolkata-1", shape: "land", place: "তুমি আর আমি", caption: "শহর ভরা আলো, আর তার মাঝে শুধু আমরা দু'জন" },
+    { img: "kolkata-2", shape: "port", place: "মিষ্টি খুনসুটি", caption: "একটু খুনসুটি, একটু অভিমান আর অনেকটা হাসি" },
+    { img: "kolkata-3", shape: "wide", place: "ভরসার ঠিকানা", caption: "সুখে-দুঃখে মাথা রাখার একটাই জায়গা" },
+    { img: "kolkata-4", shape: "port", place: "চোখে চোখে কথা", caption: "কিছু না বলেও কত কথা বলা হয়ে যায়" },
+    { img: "kolkata-5", shape: "wide", place: "একসাথে পথচলা", caption: "রোদ হোক বা বৃষ্টি, হাতটা ধরা থাক সারাজীবন" },
   ],
 
   eventsRange: "09 – 13 December 2026",
