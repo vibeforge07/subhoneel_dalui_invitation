@@ -96,11 +96,11 @@ const INVITE = {
 
   // shape: "land" = 4:3 frame, "wide" = 3:2 frame, "port" = 3:4 portrait (match the photo)
   gallery: [
-    { img: "kolkata-1", shape: "land", place: "পুরোনো শহরে", caption: "কলকাতার পুরোনো থামের ফাঁকে, হাতে হাত রেখে নতুন পথচলা" },
-    { img: "kolkata-2", shape: "port", place: "সিঁড়ির আড্ডা", caption: "এক কাপ চা, এক টুকরো বিকেল আর না ফুরোনো গল্প" },
-    { img: "kolkata-3", shape: "port", place: "প্রাণখোলা হাসি", caption: "ছোট্ট খুনসুটি, একটু অভিমান আর অনেকটা হাসি" },
-    { img: "kolkata-4", shape: "port", place: "চোখে চোখে", caption: "মুখে না বলা কথাগুলো চোখই বলে দেয়" },
-    { img: "kolkata-5", shape: "port", place: "অপেক্ষার শেষ", caption: "আর মাত্র ক'টা দিন, তারপর একসাথে সারাজীবন" },
+    { img: "kolkata-1", shape: "land", place: "ভিক্টোরিয়ার সামনে", caption: "এত আলো ভিক্টোরিয়ায়, তবু দু'জনেরই চোখ বোজা" },
+    { img: "kolkata-2", shape: "port", place: "সিঁড়িতে বসে", caption: "ওর দিকে তাকালেই আর হাসি থামে না" },
+    { img: "kolkata-3", shape: "wide", place: "ল্যাম্পপোস্টের আলোয়", caption: "মাথা রাখার জায়গাটা আগেই চেনা, এবার সারাজীবনের" },
+    { img: "kolkata-4", shape: "port", place: "লাল খিলানের নিচে", caption: "শুভদৃষ্টি তো ১১ই ডিসেম্বর, মহড়াটা আগেই হয়ে গেল" },
+    { img: "kolkata-5", shape: "wide", place: "ফাঁকা রাস্তায়", caption: "চুলে লাল গোলাপ, মুখে হাসি, সামনের পুরো পথটা দু'জনের" },
   ],
 
   eventsRange: "09 – 13 December 2026",
