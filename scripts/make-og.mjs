@@ -13,7 +13,9 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const assets = path.join(root, "public", "assets");
 const find = (name) => ["webp", "jpg", "jpeg", "png"].map((e) => path.join(assets, `${name}.${e}`)).find((f) => fs.existsSync(f));
 
-const photo = find("couple");
+// a close-up reads better in a small link thumbnail, so scripts/og-photo.jpg wins over the card photo
+const closeUp = path.join(root, "scripts", "og-photo.jpg");
+const photo = fs.existsSync(closeUp) ? closeUp : find("couple");
 if (!photo) throw new Error("public/assets/couple.(webp|jpg|png) not found");
 const damask = find("damask");
 
