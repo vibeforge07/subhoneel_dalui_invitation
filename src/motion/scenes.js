@@ -344,9 +344,9 @@ export async function initScenes() {
     );
     G.fromTo(
       ".closing__arch .arch__photo",
-      { scale: 1 },
+      { scale: 1.12 },
       {
-        scale: 1.34,
+        scale: 1,
         ease: "none",
         scrollTrigger: { trigger: ".closing", start: "top 60%", end: "bottom bottom", scrub: true },
       }
