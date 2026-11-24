@@ -14,7 +14,7 @@ export default function Night() {
       <img className="lotus lotus--l" data-asset="lotus-gold" alt="" loading="lazy" decoding="async" />
       <img className="lotus lotus--r" data-asset="lotus-gold" alt="" loading="lazy" decoding="async" />
       <header className="head">
-        <p className="head__kicker"><b>VII</b>22 January, night</p>
+        <p className="head__kicker"><b>VII</b></p>
         <h2 className="head__title" data-words>বিয়ের রাত</h2>
         <svg className="lotusline"><use href="#lotusline" /></svg>
       </header>
