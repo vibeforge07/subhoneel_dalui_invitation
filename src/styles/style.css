@@ -905,7 +905,7 @@ html.has-cursor, html.has-cursor a, html.has-cursor button, html.has-cursor canv
 .gitem--port .gframe__photo { aspect-ratio: 3 / 4; }
 .plight { position: absolute; left: 0; right: 0; top: -44px; height: 80%; z-index: 3; pointer-events: none; }
 .plight i { position: absolute; left: 50%; top: 0; width: 42%; height: 10px; translate: -50% 0; border-radius: 6px; background: linear-gradient(180deg, #f6e3a8, #b4873c 55%, #6e4d19); box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6); }
-.plight::after { content: ""; position: absolute; left: 50%; top: 8px; width: 88%; height: 100%; translate: -50% 0; background: linear-gradient(180deg, rgba(255, 214, 150, 0.3), rgba(255, 214, 150, 0.06) 60%, transparent); clip-path: polygon(30% 0, 70% 0, 100% 100%, 0 100%); mix-blend-mode: screen; filter: blur(8px); }
+.plight::after { content: ""; position: absolute; left: 50%; top: 8px; width: 88%; height: 100%; translate: -50% 0; background: radial-gradient(52% 92% at 50% 0, rgba(255, 214, 150, 0.28), rgba(255, 214, 150, 0.07) 55%, transparent); mix-blend-mode: screen; }
 .gframe {
   position: relative; padding: clamp(12px, 1.3vw, 18px); margin: 0;
   background: linear-gradient(135deg, #6b4a17, #e9cd88 16%, #a77c33 32%, #fff0c2 48%, #9c7430 64%, #e2c27a 80%, #5e4013);
